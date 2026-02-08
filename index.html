@@ -1,20 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:image" content="https://raw.githubusercontent.com/sojijr/valentine-website/main/public/images/favicon.png">
-    <link rel="icon" href="public/images/favicon.png" type="image/x-icon" />  
-    <title>Love Love Love</title>
-    <link rel="stylesheet" href="public/style.css">
-  </head>
-  <body>
-    <canvas id="starfield"></canvas>
-    <button id="valentinesButton">
-  Hey pumpkin 🎃💖<br>
-  Will you be my Valentine’s Day?<br>
-  Try to say NO… and you’re gone 😏
-    </button>
-    <script src="script.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Love Love Love</title>
+  <link rel="stylesheet" href="public/style.css" />
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      background: black;
+      color: white;
+      overflow: hidden;
+    }
+
+    button {
+      padding: 15px 30px;
+      font-size: 18px;
+      margin: 10px;
+      cursor: pointer;
+      border-radius: 8px;
+      border: none;
+    }
+
+    #yesBtn {
+      background: #ff4d6d;
+      color: white;
+    }
+
+    #noBtn {
+      background: #444;
+      color: white;
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>
+    Hey pumpkin 🎃💖<br>
+    Will you be my Valentine’s Day?
+  </h1>
+
+  <div>
+    <button id="yesBtn">YES 💕</button>
+    <button id="noBtn">NO 😏</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
 </html>
